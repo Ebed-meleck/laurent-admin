@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "curriculum_titles",
+  "info": {
+    "singularName": "curriculum-title",
+    "pluralName": "curriculum-titles",
+    "displayName": "curriculumTitle",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titreFr": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "titleEn": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "curricula": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::curriculum.curriculum",
+      "mappedBy": "curriculum_title"
+    }
+  }
+}

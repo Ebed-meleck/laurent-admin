@@ -1,0 +1,32 @@
+{
+  "name": "laurent-admin",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Laurent administration",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-documentation": "^4.13.6",
+    "@strapi/plugin-i18n": "4.13.6",
+    "@strapi/plugin-users-permissions": "4.13.6",
+    "@strapi/strapi": "4.13.6",
+    "better-sqlite3": "8.6.0",
+    "mysql2": "^3.6.1"
+  },
+  "author": {
+    "name": "ebedmeleckmakoso@gmail.com"
+  },
+  "strapi": {
+    "uuid": "c19b9b40-fe2a-4ab8-b49b-4d4aaee9dfb9"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
